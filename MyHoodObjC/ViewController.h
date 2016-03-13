@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Post.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-
+//Array of posts
+@property (nonatomic,strong) NSMutableArray *postArray;
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
 @end
 

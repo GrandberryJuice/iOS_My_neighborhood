@@ -13,6 +13,8 @@
 		C7EBD1DE1C92761B0025C0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EBD1DC1C92761B0025C0CC /* Main.storyboard */; };
 		C7EBD1E01C92761B0025C0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EBD1DF1C92761B0025C0CC /* Assets.xcassets */; };
 		C7EBD1E31C92761B0025C0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EBD1E11C92761B0025C0CC /* LaunchScreen.storyboard */; };
+		C7EBD1EF1C9281240025C0CC /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EBD1EE1C9281240025C0CC /* Post.m */; };
+		C7EBD1F31C929E910025C0CC /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7EBD1F21C929E910025C0CC /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		C7EBD1DF1C92761B0025C0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EBD1E21C92761B0025C0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7EBD1E41C92761B0025C0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7EBD1ED1C9281240025C0CC /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		C7EBD1EE1C9281240025C0CC /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		C7EBD1F11C929E910025C0CC /* PostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		C7EBD1F21C929E910025C0CC /* PostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,11 @@
 		C7EBD1D21C92761A0025C0CC /* MyHoodObjC */ = {
 			isa = PBXGroup;
 			children = (
+				C7EBD1EC1C927CE70025C0CC /* Controller */,
+				C7EBD1EB1C927CE00025C0CC /* Model */,
+				C7EBD1EA1C927CB40025C0CC /* View */,
 				C7EBD1D61C92761A0025C0CC /* AppDelegate.h */,
 				C7EBD1D71C92761A0025C0CC /* AppDelegate.m */,
-				C7EBD1D91C92761A0025C0CC /* ViewController.h */,
-				C7EBD1DA1C92761A0025C0CC /* ViewController.m */,
 				C7EBD1DC1C92761B0025C0CC /* Main.storyboard */,
 				C7EBD1DF1C92761B0025C0CC /* Assets.xcassets */,
 				C7EBD1E11C92761B0025C0CC /* LaunchScreen.storyboard */,
@@ -77,6 +84,33 @@
 				C7EBD1D41C92761A0025C0CC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7EBD1EA1C927CB40025C0CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBD1F11C929E910025C0CC /* PostCell.h */,
+				C7EBD1F21C929E910025C0CC /* PostCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C7EBD1EB1C927CE00025C0CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBD1ED1C9281240025C0CC /* Post.h */,
+				C7EBD1EE1C9281240025C0CC /* Post.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C7EBD1EC1C927CE70025C0CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7EBD1D91C92761A0025C0CC /* ViewController.h */,
+				C7EBD1DA1C92761A0025C0CC /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +186,8 @@
 				C7EBD1DB1C92761A0025C0CC /* ViewController.m in Sources */,
 				C7EBD1D81C92761A0025C0CC /* AppDelegate.m in Sources */,
 				C7EBD1D51C92761A0025C0CC /* main.m in Sources */,
+				C7EBD1EF1C9281240025C0CC /* Post.m in Sources */,
+				C7EBD1F31C929E910025C0CC /* PostCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
